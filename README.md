@@ -54,6 +54,8 @@ DUO_UNIVERSAL_AUTH = {
 
 ## Duo API Callback Setup
 
+**Note:** This step allows the application to communicate with Duo. If the view is not registered, the application will raise a `NoReverseMatch` error upon starting the Duo authentication flow.
+
 To create the callback for the API to communicate with, you must add an entry to your `urlpatterns` variable from within your application's `urls.py` file (with any prepending path you choose):
 
 ```python
