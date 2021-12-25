@@ -29,6 +29,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/AdamAngle/django-duo-universal-auth',
     author='Adam Angle',
+    author_email='contact@adamangle.com',
     license='BSD 3-clause',
     install_requires=['duo-universal'],
     classifiers=CLASSIFIERS,
