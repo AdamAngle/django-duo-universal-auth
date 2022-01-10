@@ -137,6 +137,7 @@ class DuoUniversalAuthMiddleware:
             # If the user is authenticated but not authenticated with Duo,
             # redirect to the Duo 2FA page.
             request.session['DUO_STATUS'] = 'IN_PROGRESS'
+            request.session['DUO_NEXT_URL'] = request.path
             auth_url = self.get_duo_auth_url(request)
             return redirect(auth_url) if auth_url else self.get_response(request)
 

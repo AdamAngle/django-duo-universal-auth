@@ -23,7 +23,7 @@ with open(long_description_filename) as fd:
 
 setup(
     name='django-duo-universal-auth',
-    version='0.1.0',
+    version='0.2.0',
     description='A simple Django middleware for Duo Universal 2-factor authentication.',
     long_description=long_description,
     long_description_content_type='text/markdown',
